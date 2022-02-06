@@ -1,4 +1,4 @@
-import React, { Component , Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import ServiceTwo from "../elements/service/ServiceTwo";
@@ -13,35 +13,39 @@ import FooterTwo from "../component/footer/FooterTwo";
 import ModalVideo from 'react-modal-video';
 import { videoTagString, VideoTag } from 'react-video-tag';
 import Helmet from "../component/common/Helmet";
+import WhereToBuild from "../elements/whereToBuild/WhereToBuild";
 videoTagString({ src: '/assets/images/service/video.mp4', poster: '/assets/images/bg/bg-image-24.jpg' })
 
 const SlideList = [
     {
         textPosition: 'text-left',
         category: '',
-        title: 'Welcome Video Studio',
-        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
+        title: 'Kalwanu Constructions',
+        description: 'Your trusted home builders',
         buttonText: 'Contact Us',
         buttonLink: '/contact'
     }
 ]
 
-class StudioAgency extends Component{
-    constructor () {
+class LandingPage extends Component {
+
+    constructor() {
         super()
         this.state = {
             isOpen: false
         }
         this.openModal = this.openModal.bind(this)
     }
-    openModal () {
-        this.setState({isOpen: true})
+
+    openModal() {
+        this.setState({ isOpen: true })
     }
-    render(){
-        const PostList = BlogContent.slice(0 , 3);
-        return(
+
+    render() {
+        const PostList = BlogContent.slice(0, 3);
+        return (
             <Fragment>
-                <Helmet pageTitle="Studio Agency" />
+                <Helmet pageTitle="Kalwanu Constructions" />
                 {/* Start Header Area  */}
                 <Header />
                 {/* End Header Area  */}
@@ -49,7 +53,7 @@ class StudioAgency extends Component{
                 {/* Start Slider Area   */}
                 <div className="slider-wrapper">
                     {/* Start Single Slide */}
-                    {SlideList.map((value , index) => (
+                    {SlideList.map((value, index) => (
                         <div className="slide slide-style-2 slider-video-bg d-flex align-items-center justify-content-center" key={index} data-black-overlay="6">
                             <div className="container">
                                 <div className="row align-items-center">
@@ -62,25 +66,52 @@ class StudioAgency extends Component{
                                     </div>
                                     <div className="col-lg-4">
                                         <div className="video-inner">
-                                            <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='ZOoVOfieAF8' onClose={() => this.setState({isOpen: false})} />
+                                            <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='Hm-cM9SE8nk' onClose={() => this.setState({ isOpen: false })} />
                                             <button className="video-popup theme-color" onClick={this.openModal}><span className="play-icon"></span></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="video-background">
-                                <VideoTag autoPlay={`${true}`} muted={`${true}`} playsInline={`${true}`} loop={`${true}`}  src={`${"/assets/images/service/video.mp4"}`} poster={`${"/assets/images/bg/bg-image-24.jpg"}`} />
+                                <VideoTag autoPlay={`${true}`} muted={`${true}`} playsInline={`${true}`} loop={`${true}`} src={`${"/assets/images/service/A_Royal_Treat.mp4"}`} poster={`${"/assets/images/bg/bg-image-24.jpg"}`} />
                             </div>
                         </div>
                     ))}
                     {/* End Single Slide */}
 
-                    
+
                 </div>
                 {/* End Slider Area   */}
 
+                {/* Start Testimonials Area */}
+                <div className="rn-brand-area brand-separation bg_color--5 ptb--120 mb-0 pb-5">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <BrandTwo />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End Testimonials Area */}
 
-                {/* Start About Area */}
+                {/* Start Where to build  */}
+                <div className="service-area ptb--80  bg_image bg_image--3">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="section-title text-center mb--30">
+                                    <h3>Find The Right Build Type For Your Needs</h3>
+                                    <p>Building a new home made easy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <WhereToBuild column="col-lg-4" teamStyle="" item="3" />
+                    </div>
+                </div>
+                {/* End Where to build  */}
+
+                 {/* Start About Area */}
                 <div className="about-area ptb--120">
                     <AboutTwo />
                 </div>
@@ -142,12 +173,12 @@ class StudioAgency extends Component{
                             </div>
                         </div>
                         <div className="row mt--60 mt_sm--30">
-                            {PostList.map((value , i ) => (
+                            {PostList.map((value, i) => (
                                 <div className="col-lg-4 col-md-6 col-12" key={i}>
                                     <div className="blog blog-style--1">
                                         <div className="thumbnail">
                                             <a href="/blog-details">
-                                                <img className="w-100" src={`/assets/images/blog/blog-${value.images}.jpg`} alt="Blog Images"/>
+                                                <img className="w-100" src={`/assets/images/blog/blog-${value.images}.jpg`} alt="Blog Images" />
                                             </a>
                                         </div>
                                         <div className="content">
@@ -192,4 +223,4 @@ class StudioAgency extends Component{
         )
     }
 }
-export default StudioAgency;
+export default LandingPage;

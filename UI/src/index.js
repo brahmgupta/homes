@@ -17,6 +17,7 @@ import DigitalAgency from './home/DigitalAgency';
 import CreativeAgency from './home/CreativeAgency';
 import PersonalPortfolio from './home/PersonalPortfolio';
 import Business from './home/Business';
+import LandingPage from './home/LandingPage';
 import StudioAgency from './home/StudioAgency';
 import PortfolioLanding from './home/PortfolioLanding';
 import CreativeLanding from './home/CreativeLanding';
@@ -65,7 +66,7 @@ class Root extends Component{
             <BrowserRouter basename={'/'}>
                 <PageScrollTop>
                     <Switch>
-                        <Route exact path={`${process.env.PUBLIC_URL}/`} component={StudioAgency}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/`} component={LandingPage}/>
                         
                         <Route exact path={`${process.env.PUBLIC_URL}/demo`} component={Demo}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/main-demo`} component={MainDemo}/>

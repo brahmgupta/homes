@@ -19,15 +19,14 @@ const SlideList = [
     {
         textPosition: 'text-left',
         category: '',
-        title: 'Kalwanu Constructions',
-        description: 'Your trusted home builders',
+        title: 'Welcome Video Studio',
+        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
         buttonText: 'Contact Us',
         buttonLink: '/contact'
     }
 ]
 
 class StudioAgency extends Component{
-    
     constructor () {
         super()
         this.state = {
@@ -35,16 +34,14 @@ class StudioAgency extends Component{
         }
         this.openModal = this.openModal.bind(this)
     }
-
     openModal () {
         this.setState({isOpen: true})
     }
-
     render(){
         const PostList = BlogContent.slice(0 , 3);
         return(
             <Fragment>
-                <Helmet pageTitle="Kalwanu Constructions" />
+                <Helmet pageTitle="Studio Agency" />
                 {/* Start Header Area  */}
                 <Header />
                 {/* End Header Area  */}
@@ -65,14 +62,14 @@ class StudioAgency extends Component{
                                     </div>
                                     <div className="col-lg-4">
                                         <div className="video-inner">
-                                            <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='Hm-cM9SE8nk' onClose={() => this.setState({isOpen: false})} />
+                                            <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='ZOoVOfieAF8' onClose={() => this.setState({isOpen: false})} />
                                             <button className="video-popup theme-color" onClick={this.openModal}><span className="play-icon"></span></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="video-background">
-                                <VideoTag autoPlay={`${true}`} muted={`${true}`} playsInline={`${true}`} loop={`${true}`}  src={`${"/assets/images/service/A_Royal_Treat.mp4"}`} poster={`${"/assets/images/bg/bg-image-24.jpg"}`} />
+                                <VideoTag autoPlay={`${true}`} muted={`${true}`} playsInline={`${true}`} loop={`${true}`}  src={`${"/assets/images/service/video.mp4"}`} poster={`${"/assets/images/bg/bg-image-24.jpg"}`} />
                             </div>
                         </div>
                     ))}
