@@ -114,7 +114,7 @@ class Gallery extends Component {
                     <div className="container">
                         <div className="row">
                             {TabOne.map((value , index) => (
-                                <div className="col-lg-6" key={index}>
+                                <div className="col-lg-4" key={index}>
                                     {isOpen && (
                                         <Lightbox
                                             mainSrc={TabOne[tab1].bigImage}
@@ -134,7 +134,7 @@ class Gallery extends Component {
                                         />
                                     )}
                                     <div className="item-portfolio-static">
-                                        <div onClick={() => this.setState({ isOpen: true, tab1: index })}>
+                                        <div onClick={() => this.setState({ isOpen: false, tab1: index })}>
                                             <div className="portfolio-static">
                                                 <div className="thumbnail-inner">
                                                     <div className="thumbnail">

@@ -32,6 +32,35 @@ a {
     }
 }
 
+a {
+    &.btn-no-transparent{
+        color: #ffffff;
+        @extend %transition;  
+        position: relative;
+        display: inline-block;
+        padding-bottom: 3px;
+        &:hover{
+            color: $theme-color;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background: $theme-color;
+            opacity: 0.75;
+            @extend %transition;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+}
+
 a ,
 button {
     &.rn-btn {

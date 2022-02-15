@@ -142,6 +142,12 @@
                     }
                 }
             }
+
+            &.description-kc{
+                color: #1f1f25;
+                font-weight: 400;
+
+            }
         }
 
     }
@@ -156,6 +162,24 @@
            
         }
     }
+
+    .thumbnail-kc {
+        margin-top: -32px;
+        margin-bottom: -32px;
+        border-radius: 8px;
+        height: 328px;
+        overflow: hidden;
+        img{
+            border-radius: 8px;
+            position:absolute;
+            top: -184px;
+        }
+    }
+}
+
+.about-wrapper-kc {
+    height: 300px;
+    padding-top: 20px;
 }
 
 .about-position-top {

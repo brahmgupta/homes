@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import { FiX, FiMenu } from "react-icons/fi";
+import { FiX, FiMenu, FiPhoneCall } from "react-icons/fi";
 
 
 class Header extends Component {
@@ -59,7 +59,7 @@ class Header extends Component {
                             </a>
                         </div>
                     </div>
-                    <div className="header-right">
+                    <div className="header-right header-right-kc">
                         <nav className="mainmenunav d-lg-block">
                             <ul className="mainmenu">
                                 <li className="has-droupdown"><Link to="#">Home</Link>
@@ -123,9 +123,14 @@ class Header extends Component {
                             </ul>
                         </nav>
                         <div className="header-btn">
-                            <a className="rn-button-style--2 btn-solid" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
+                            <div className="call-icon">
+                                <FiPhoneCall />
+
+                            </div><a class="btn-transparent rn-btn-dark" href="tel:1300123456"><span class="text">1300.123.456</span></a>
+
+                            {/* <a className="rn-button-style--2 btn-solid" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
                                 <span>Contact Us</span>
-                            </a>
+                            </a> */}
                         </div>
                         {/* Start Humberger Menu  */}
                         <div className="humberger-menu d-block d-lg-none pl--20">

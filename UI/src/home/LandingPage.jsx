@@ -4,7 +4,7 @@ import { FiChevronUp } from "react-icons/fi";
 import ServiceTwo from "../elements/service/ServiceTwo";
 import CounterOne from "../elements/counters/CounterOne";
 import Testimonial from "../elements/Testimonial";
-import AboutTwo from "../component/HomeLayout/homeOne/AboutTwo";
+import AboutTwoKC from "../component/HomeLayout/homeOne/AboutTwoKC";
 import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
 import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
@@ -61,7 +61,7 @@ class LandingPage extends Component {
                                         <div className={`inner ${value.textPosition}`}>
                                             {value.category ? <span>{value.category}</span> : ''}
                                             {value.title ? <h1 className="title">{value.title}</h1> : ''}
-                                            {value.description ? <p className="description">{value.description}</p> : ''}
+                                            {value.description ? <p className="description white">{value.description}</p> : ''}
                                         </div>
                                     </div>
                                     <div className="col-lg-4">
@@ -83,20 +83,8 @@ class LandingPage extends Component {
                 </div>
                 {/* End Slider Area   */}
 
-                {/* Start Testimonials Area */}
-                <div className="rn-brand-area brand-separation bg_color--5 ptb--120 mb-0 pb-5">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <BrandTwo />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* End Testimonials Area */}
-
                 {/* Start Where to build  */}
-                <div className="service-area ptb--80  bg_image bg_image--3">
+                <div className="service-area ptb--120  bg_image bg_image--3">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -111,19 +99,25 @@ class LandingPage extends Component {
                 </div>
                 {/* End Where to build  */}
 
-                 {/* Start About Area */}
-                <div className="about-area ptb--120">
-                    <AboutTwo />
-                </div>
-                {/* End About Area */}
-
-                {/* Start Service Area  */}
-                <div className="service-area ptb--80  bg_image bg_image--3">
+                {/* Start Testimonials Area */}
+                <div className="rn-brand-area brand-separation bg_color--5 ptb--120 mb-0 pb-5">
                     <div className="container">
-                        <ServiceTwo />
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <BrandTwo />
+                            </div>
+                        </div>
                     </div>
                 </div>
-                {/* End Service Area  */}
+                {/* End Testimonials Area */}
+                
+
+                {/* Start Built on trust Area */}
+                <div className="about-area bg_image--3">
+                    <AboutTwoKC />
+                </div>
+                {/* End Built on trust Area */}
+
 
                 {/* Start Portfolio Area */}
                 <div className="portfolio-area ptb--120 bg_color--1">
@@ -132,29 +126,6 @@ class LandingPage extends Component {
                     </div>
                 </div>
                 {/* End Portfolio Area */}
-
-                {/* Start CounterUp Area */}
-                <div className="rn-counterup-area pt--25 pb--110 bg_color--1">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="section-title text-center">
-                                    <h3 className="fontWeight500">Our Fun Facts</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <CounterOne />
-                    </div>
-                </div>
-                {/* End CounterUp Area */}
-
-                {/* Start Testimonial Area */}
-                <div className="rn-testimonial-area bg_color--5 ptb--120">
-                    <div className="container">
-                        <Testimonial />
-                    </div>
-                </div>
-                {/* End Testimonial Area */}
 
                 {/* Start Blog Area */}
                 <div className="rn-blog-area pt--120 bg_color--1">
@@ -196,17 +167,7 @@ class LandingPage extends Component {
                 </div>
                 {/* End Blog Area */}
 
-                {/* Start Brand Area */}
-                <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <BrandTwo />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* End Brand Area */}
+
 
                 {/* Start Footer Area  */}
                 <FooterTwo />

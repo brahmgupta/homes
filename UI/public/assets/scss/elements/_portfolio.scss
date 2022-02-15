@@ -47,6 +47,13 @@
             opacity: 0;
             @extend %transition;
         }
+
+        &.no-bg {
+            &::before{
+            background-color: transparent;
+            background-image: none;
+            }
+        }
     }
     .thumbnail{
         position: absolute;
@@ -78,7 +85,15 @@
         &.image-4 {
             background-image: url(/assets/images/portfolio/portfolio-4.jpg);
         }
-
+        &.image-mu {
+            background-image: url(/assets/images/building/multi-unit.jpg);
+        }
+        &.image-ch {
+            background-image: url(/assets/images/building/custom-home.jpg);
+        }
+        &.image-hl {
+            background-image: url(/assets/images/building/home-land.jpg);
+        }
         &::after{
             background-color: rgba(45,45,45,.35);
             position: absolute;
@@ -122,7 +137,16 @@
         &.image-4 {
             background-image: url(/assets/images/portfolio/portfolio-1.jpg);
         }
-    }
+        &.image-mu {
+            background-image: url(/assets/images/building/multi-unit.jpg);
+        }
+        &.image-ch {
+            background-image: url(/assets/images/building/custom-home.jpg);
+        }
+        &.image-hl {
+            background-image: url(/assets/images/building/home-land.jpg);
+        }
+     }
 
     .content {
         position: absolute;
@@ -144,6 +168,11 @@
             left: 20px;
             right: 20px;
         }
+
+        &.wtb {
+            top: 40px;  
+            bottom: auto;          
+        }
         .inner {
             p {
                 color: #c6c9d8;
@@ -153,8 +182,9 @@
                 font-size: 24px;
                 line-height: 36px;
                 a{
-                    color: #ffffff;
+                    color: #ffffff;                    
                 }
+                
             }
             .title {
                 font-size: 24px;
@@ -207,6 +237,15 @@
             &.image-7 {
                 background-image: url(/assets/images/portfolio/interior/portfolio-7.jpg);
             }
+            &.image-mu {
+                background-image: url(/assets/images/building/multi-unit.jpg);
+            }
+            &.image-ch {
+                background-image: url(/assets/images/building/custom-home.jpg);
+            }
+            &.image-hl {
+                background-image: url(/assets/images/building/home-land.jpg);
+            }
         }
         .bg-blr-image{
             background-image: url(/assets/images/portfolio/interior/portfolio-1.jpg);
@@ -233,6 +272,15 @@
             }
             &.image-7 {
                 background-image: url(/assets/images/portfolio/interior/portfolio-7.jpg);
+            }
+            &.image-mu {
+                background-image: url(/assets/images/building/multi-unit.jpg);
+            }
+            &.image-ch {
+                background-image: url(/assets/images/building/custom-home.jpg);
+            }
+            &.image-hl {
+                background-image: url(/assets/images/building/home-land.jpg);
             }
         }
     }
@@ -278,7 +326,11 @@
             opacity: 0;
             z-index: 9;
         }
-        
+        .btn-no-transparent{
+            &::after{
+                width: 100%;
+            }
+        }
     }
     &.portfolio-style--2{
         .inner{
@@ -349,6 +401,9 @@
             }
             &.image-10 {
                 background-image: url(/assets/images/portfolio/portfolio-static-10.jpg);
+            }
+            &.image-mu {
+                background-image: url(/assets/images/building/multi-unit.jpg);
             }
             &::after {
                 display: none;
@@ -479,6 +534,15 @@
                 &.image-10 {
                     background-image: url(/assets/images/portfolio/dp-portfolio-10.jpg);
                 }
+                &.image-mu {
+                    background-image: url(/assets/images/building/multi-unit.jpg);
+                }
+                &.image-ch {
+                    background-image: url(/assets/images/building/custom-home.jpg);
+                }
+                &.image-hl {
+                    background-image: url(/assets/images/building/home-land.jpg);
+                }
             }
 
             .bg-blr-image {
@@ -513,6 +577,15 @@
                 }
                 &.image-10 {
                     background-image: url(/assets/images/portfolio/dp-portfolio-10.jpg);
+                }
+                &.image-mu {
+                    background-image: url(/assets/images/building/multi-unit.jpg);
+                }
+                &.image-ch {
+                    background-image: url(/assets/images/building/custom-home.jpg);
+                }
+                &.image-hl {
+                    background-image: url(/assets/images/building/home-land.jpg);
                 }
             }
         }
