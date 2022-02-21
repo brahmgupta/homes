@@ -2,7 +2,7 @@ import React from 'react'
 import data from "./data";
 import { Link } from "react-router-dom";
 
-const WhereToBuild = (props) => {
+const LandingProjects = (props) => {
     const itemSlice = data.slice(0, 3)
     return (
         <div className="row">
@@ -14,12 +14,12 @@ const WhereToBuild = (props) => {
                     </div>
                     <div className="content wtb">
                         <div className="inner">
-                            {/* <p>Development</p> */}
-                            {/* <h4><a href="/portfolio-details">Unit or Townhouse</a></h4> */}
-                             <h4><a class="btn-no-transparent rn-btn-dark" href="/blog"><span class="text">Units or Townhouse</span></a></h4>
-                            {/* <div className="portfolio-button">
+                             <p>Development</p> 
+                         <h4><a href="/portfolio-details">Unit or Townhouse</a></h4> 
+                            <h4><a class="btn-no-transparent rn-btn-dark" href="/blog"><span class="text">Units or Townhouse</span></a></h4>
+                             <div className="portfolio-button">
                                 <a className="rn-btn" href="/portfolio-details">View Details</a>
-                            </div> */}
+                            </div> 
                         </div>
                     </div>
                     <Link className="link-overlay" to="/portfolio-details"></Link>
@@ -173,4 +173,4 @@ const WhereToBuild = (props) => {
     //     </div>
     // )
 }
-export default WhereToBuild
+export default LandingProjects

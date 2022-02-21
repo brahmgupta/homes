@@ -25,6 +25,8 @@ export const portfolioSlick2 = {
     slidesToScroll: 1,
     dots: true,
     arrows: true,
+    className: 'test',
+    useTransform: true,
     responsive: [{
         breakpoint: 800,
         settings: {

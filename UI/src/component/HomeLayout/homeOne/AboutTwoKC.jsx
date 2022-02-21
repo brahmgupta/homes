@@ -6,7 +6,7 @@ class AboutTwoKC extends Component{
         description = 'We are a construction company headquartered in Kings Park, NSW AUSTRALIA. We have operations in the states of NSW, VIC and ACT.';
         return(
             <React.Fragment>
-                <div className="about-wrapper about-wrapper-kc">
+                <div className="about-wrapper ptb--120">
                     <div className="container">
                         <div className="row row--35 align-items-center">
 

@@ -164,22 +164,31 @@
     }
 
     .thumbnail-kc {
-        margin-top: -32px;
-        margin-bottom: -32px;
+        border: solid 12px white;
         border-radius: 8px;
-        height: 328px;
+        height: 450px;
         overflow: hidden;
         img{
             border-radius: 8px;
             position:absolute;
-            top: -184px;
+            top: -124px;
         }
     }
 }
 
 .about-wrapper-kc {
-    height: 300px;
     padding-top: 20px;
+
+    .about-inner {
+        @media #{$md-layout} {
+            padding-top: 80px;
+            padding-bottom: 16px;
+        }
+        @media #{$sm-layout} {
+            padding-top: 80px;
+            padding-bottom: 16px;
+        }
+    }
 }
 
 .about-position-top {

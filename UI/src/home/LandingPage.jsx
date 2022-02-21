@@ -5,7 +5,7 @@ import ServiceTwo from "../elements/service/ServiceTwo";
 import CounterOne from "../elements/counters/CounterOne";
 import Testimonial from "../elements/Testimonial";
 import AboutTwoKC from "../component/HomeLayout/homeOne/AboutTwoKC";
-import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
+import LandingPageProjects from "../component/HomeLayout/homeOne/LandingPageProjects";
 import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
 import Header from "../component/header/Header";
@@ -83,6 +83,24 @@ class LandingPage extends Component {
                 </div>
                 {/* End Slider Area   */}
 
+                {/* Start Built on trust Area */}
+                <div className="about-area bg_image--3">
+                    <AboutTwoKC />
+                </div>
+                {/* End Built on trust Area */}
+
+                {/* Start Testimonials Area */}
+                <div className="rn-brand-area brand-separation bg_color--5 ptb--120 mb-0 pb-5">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <BrandTwo />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End Testimonials Area */}
+
                 {/* Start Where to build  */}
                 <div className="service-area ptb--120  bg_image bg_image--3">
                     <div className="container">
@@ -99,36 +117,18 @@ class LandingPage extends Component {
                 </div>
                 {/* End Where to build  */}
 
-                {/* Start Testimonials Area */}
-                <div className="rn-brand-area brand-separation bg_color--5 ptb--120 mb-0 pb-5">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <BrandTwo />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* End Testimonials Area */}
-                
-
-                {/* Start Built on trust Area */}
-                <div className="about-area bg_image--3">
-                    <AboutTwoKC />
-                </div>
-                {/* End Built on trust Area */}
 
 
-                {/* Start Portfolio Area */}
-                <div className="portfolio-area ptb--120 bg_color--1">
+                {/* Start Projects Area */}
+                <div className="portfolio-area ptb--150 bg_color--1">
                     <div className="portfolio-sacousel-inner mb--55 mb_sm--30">
-                        <Portfolio />
+                        <LandingPageProjects />
                     </div>
                 </div>
-                {/* End Portfolio Area */}
+                {/* End Projects Area */}
 
                 {/* Start Blog Area */}
-                <div className="rn-blog-area pt--120 bg_color--1">
+                {/* <div className="rn-blog-area pt--120 bg_color--1">
                     <div className="container">
                         <div className="row align-items-end">
                             <div className="col-lg-6">
@@ -164,7 +164,7 @@ class LandingPage extends Component {
                             ))}
                         </div>
                     </div>
-                </div>
+                </div> */}
                 {/* End Blog Area */}
 
 
