@@ -14,6 +14,8 @@ import ModalVideo from 'react-modal-video';
 import { videoTagString, VideoTag } from 'react-video-tag';
 import Helmet from "../component/common/Helmet";
 import WhereToBuild from "../elements/whereToBuild/WhereToBuild";
+import FooterKC from "../component/footer/FooterKC";
+
 videoTagString({ src: '/assets/images/service/video.mp4', poster: '/assets/images/bg/bg-image-24.jpg' })
 
 const SlideList = [
@@ -90,7 +92,7 @@ class LandingPage extends Component {
                 {/* End Built on trust Area */}
 
                 {/* Start Testimonials Area */}
-                <div className="rn-brand-area brand-separation bg_color--5 ptb--120 mb-0 pb-5">
+                <div className="rn-brand-area brand-separation bg_color--5 ptb--90 mb-0 pb-5">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -102,7 +104,7 @@ class LandingPage extends Component {
                 {/* End Testimonials Area */}
 
                 {/* Start Where to build  */}
-                <div className="service-area ptb--120  bg_image bg_image--3">
+                <div className="service-area ptb--90  bg_image bg_image--3">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -118,9 +120,8 @@ class LandingPage extends Component {
                 {/* End Where to build  */}
 
 
-
                 {/* Start Projects Area */}
-                <div className="portfolio-area ptb--150 bg_color--1">
+                <div className="portfolio-area ptb--90 bg_color--1">
                     <div className="portfolio-sacousel-inner mb--55 mb_sm--30">
                         <LandingPageProjects />
                     </div>
@@ -170,7 +171,9 @@ class LandingPage extends Component {
 
 
                 {/* Start Footer Area  */}
-                <FooterTwo />
+                <FooterKC />
+
+                {/* <FooterTwo /> */}
                 {/* End Footer Area  */}
 
                 {/* Start Back To Top */}

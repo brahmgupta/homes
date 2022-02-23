@@ -166,6 +166,44 @@ Footer Styles
     }
 }
 
+.footer-kc {
+    padding-top: 70px;
+
+    .footer-link {
+
+        h3 {
+            color: #c6c9d8;
+        }
+
+        .h4-sm {
+            color: #c6c9d8;
+            margin-bottom: 0;
+        }
+
+        h4 {
+            color: #c6c9d8;
+        }
+
+        ul {
+            &.ft-link-sm {
+            margin-bottom: 30px;
+            color: #c6c9d8;             
+
+            }
+
+            &.ft-link {
+             
+                li {
+                    a {
+                        color: #c6c9d8;             
+                    }
+                    color: #c6c9d8;             
+             
+                }
+            }
+        }
+    }
+}
 
 /* Footer Style Two  */
 .footer-style-2 {
@@ -175,10 +213,6 @@ Footer Styles
         opacity: 0.75;
     }
 }
-
-
-
-
 
 .copyright-text {
     position: absolute;
@@ -199,5 +233,13 @@ Footer Styles
         color: #c6c9d8;
         font-size: 14px;
         opacity: 0.75;
+    }
+}
+
+.copyright-text-kc {
+    bottom: -80px;
+
+    p {
+        color: #fff;
     }
 }

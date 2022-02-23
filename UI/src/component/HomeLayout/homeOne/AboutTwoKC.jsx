@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 
-class AboutTwoKC extends Component{
-    render(){
+class AboutTwoKC extends Component {
+    render() {
         let title = 'Built on trust',
-        description = 'We are a construction company headquartered in Kings Park, NSW AUSTRALIA. We have operations in the states of NSW, VIC and ACT.';
-        return(
+            description = 'We are a construction company headquartered in Kings Park, NSW AUSTRALIA. We have operations in the states of NSW, VIC and ACT.';
+        return (
             <React.Fragment>
-                <div className="about-wrapper ptb--120">
+                <div className="about-wrapper ptb--90">
                     <div className="container">
                         <div className="row row--35 align-items-center">
 
                             <div className="col-lg-5 col-md-12">
                                 <div className="thumbnail thumbnail-kc">
-                                    <img className="w-100" src="/assets/images/building/build-on-trust.jpg" alt="Build on trust"/>
+                                    <img className="w-100" src="/assets/images/building/build-on-trust.jpg" alt="Build on trust" />
                                 </div>
                             </div>
 
@@ -20,7 +20,9 @@ class AboutTwoKC extends Component{
                                 <div className="about-inner inner">
                                     <div className="section-title">
                                         <h2 className="title">{title}</h2>
-                                        <p className="description description-kc">{description}</p>
+                                        <p className="description description-kc">
+                                            We are a construction company headquartered in Kings Park, NSW AUSTRALIA. We have operations in the states of <b>NSW</b>, <b>VIC</b> and <b>ACT</b>.
+                                        </p>
                                         <p className="description description-kc">Build your luxury home with a family like yours. We never forget the importance of what we do – creating a home for your family to love.</p>
                                     </div>
                                     {/* <div className="row mt--30 mt_sm--10">
