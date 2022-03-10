@@ -104,6 +104,7 @@ class Header extends Component {
                                 </li>
                                 <li className="has-droupdown"><Link to="#" >Blocks</Link>
                                     <ul className="submenu">
+                                        <li><Link to="/house-designs">House Designs</Link></li>
                                         <li><Link to="/portfolio">Portfolio</Link></li>
                                         <li><Link to="/team">Team</Link></li>
                                         <li><Link to="/service">Service</Link></li>

@@ -51,6 +51,7 @@ import Testimonial from "./blocks/Testimonial";
 import Portfolio from "./blocks/Portfolio";
 import VideoPopup from "./blocks/VideoPopup";
 import Gallery from "./blocks/Gallery";
+import GalleryKC from "./blocks/GalleryKC";
 import Brand from "./blocks/Brand";
 import ProgressBar from "./blocks/ProgressBar";
 import ContactForm from "./blocks/ContactForm";
@@ -106,6 +107,7 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/portfolio`} component={Portfolio}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/video-popup`} component={VideoPopup}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/gallery`} component={Gallery}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/house-designs`} component={GalleryKC}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/clint-logo`} component={Brand}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/progressbar`} component={ProgressBar}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/contact-form`} component={ContactForm}/>
