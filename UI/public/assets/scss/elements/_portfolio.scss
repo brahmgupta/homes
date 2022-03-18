@@ -989,6 +989,19 @@ Portfolio Style Three
   }
 }
 
+.with-shadow {
+  box-shadow: 5px 4px 7px 0px rgba(0, 0, 0, .10), 0 1px 2px 0 rgba(0, 0, 0, .06);
+}
+
+.kc-icon {
+  color: #0b1b3a;
+  font-size: 24px;
+  line-height: 24px;
+  width: 44px;
+  height: auto;
+  display: block;
+}
+
 /* Portfolio Style Static */
 .item-portfolio-static {
   margin-top: 60px;
@@ -1037,12 +1050,20 @@ Portfolio Style Three
 .home-design-card {
   border: 1px solid #e0e2e8;
   border-radius: 5px;
-  padding: 5px;
+  // padding: 5px;
+  .thumbnail {
+    img {
+      border-radius: 0;
+    }
+  }
 }
 
 .home-design-card-content {
-  height: 200px;
-  padding: 20px 5px 5px 5px;
+  // height: 200px;
+  padding: 20px;
+  font-family: "Helvetica Neue LT W05_55 Roman",Helvetica,Arial,sans-serif;
+  letter-spacing: .02em;
+  font-weight: 400;
 
   .content-header {
     position: relative;
