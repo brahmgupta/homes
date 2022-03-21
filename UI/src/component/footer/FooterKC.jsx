@@ -65,7 +65,7 @@ class FooterKC extends Component {
 
                                         <div className="col-lg-12">
                                             <div className="copyright-text copyright-text-kc">
-                                                <p>Copyright © 2021 Kalwanu Constructions. All Rights Reserved.</p>
+                                                <p>Copyright © 2022 Kalwanu Constructions. All Rights Reserved.</p>
                                             </div>
                                         </div>
                                     </div>

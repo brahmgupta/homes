@@ -68,11 +68,13 @@ const TabOne = [
         bigImage: '/assets/images/house-land/kc-2.jpeg',
         category: 'Mobile App',
         title: 'The service provide for designer',
-        subTitle: 'Fits lot: 12.5m x 26m',
+        subTitle: 'Fits lot: 14m x 26m',
         config: [
             { asset: <FaBed />, text: '4' },
             { asset: <FaBath />, text: '2' },
             { asset: <FaCar />, text: '2' },
+            { asset: <FaCouch />, text: '2' },
+            { asset: <FaArrowsAltH />, text: '14m' },
         ]
     },
     {
@@ -85,6 +87,8 @@ const TabOne = [
             { asset: <FaBed />, text: '4' },
             { asset: <FaBath />, text: '2' },
             { asset: <FaCar />, text: '2' },
+            { asset: <FaCouch />, text: '1' },
+            { asset: <FaArrowsAltH />, text: '12.5m' },
         ]
     },
     {
@@ -96,6 +100,8 @@ const TabOne = [
             { asset: <FaBed />, text: '4' },
             { asset: <FaBath />, text: '2' },
             { asset: <FaCar />, text: '2' },
+            { asset: <FaCouch />, text: '1' },
+            { asset: <FaArrowsAltH />, text: '12.5m' },
         ]
     },
     {
@@ -152,7 +158,8 @@ class GalleryKC extends Component {
                             <div className="col-lg-8">
                                 <div className='inner text-left gallery-inner-kc'>
                                     <h1 className="title">Home Designs</h1>
-                                    <p className="description white">Your family is unique, so why not create a unique home that completely matches your needs</p>
+                                    <p className="description white">Your family is one-of-a-kind, why not design a home that reflects that</p>
+                                    {/* <p className="description white">Your family is unique, so why not create a unique home that completely matches your needs</p> */}
                                 </div>
                             </div>
                         </div>
@@ -163,9 +170,10 @@ class GalleryKC extends Component {
                 {/* Start Page Wrapper  */}
                 <main className="page-wrapper">
 
-                    <div class="section-title text-center service-style--3 mb--30 mb_sm--0 mt-5">
+                    <div class="section-title text-center service-style--3 mb--30 mb_sm--0 gallery-title-kc">
                         <h3 class="title">House and Land packages - NSW, VIC & ACT</h3>
-                        <p className='description' >Our house and land packages are suited to all budgets and lifestyles. Call us today so we can get started on tailoring the package that’s right for you!</p>
+                        <p className='description'>Our house and property packages are catered for all budgets and lifestyles. Call us today so we can get started on tailoring the package that’s right for you!</p>
+                        {/* <p className='description' >Our house and land packages are suited to all budgets and lifestyles. Call us today so we can get started on tailoring the package that’s right for you!</p> */}
                     </div>
 
                     {/* Start Portfolio Area  */}
@@ -224,7 +232,7 @@ class GalleryKC extends Component {
                                                                         {value.config.map((val, i) => (
                                                                             <li key={i} className='text-center'>
                                                                                 <span className='kc-icon'>{val.asset}</span>
-                                                                                <span>{val.text}</span>
+                                                                                <span className='kc-icon-value'>{val.text}</span>
                                                                             </li>
                                                                         ))}
                                                                     </ul>

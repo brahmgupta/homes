@@ -1002,6 +1002,10 @@ Portfolio Style Three
   display: block;
 }
 
+.kc-icon-value {
+  color: $kc-color;
+}
+
 /* Portfolio Style Static */
 .item-portfolio-static {
   margin-top: 60px;
@@ -1073,7 +1077,7 @@ Portfolio Style Three
     margin-bottom: 5px;
 
     .plan-name {
-      color: #f9004d;
+      color: $kc-color;
       font-weight: 500;
     }
   }
@@ -1121,7 +1125,7 @@ Portfolio Style Three
       bottom: 0;
       width: 184px;
       height: 2px;
-      background: #f9004d;
+      background: $kc-color;
       opacity: 0.75;
 
       @media #{$sm-layout} {
@@ -1138,4 +1142,8 @@ Portfolio Style Three
     font-size: 24px;
     line-height: 40px;
   }
+}
+
+.gallery-title-kc {
+  margin-top: 60px;
 }
