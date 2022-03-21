@@ -77,7 +77,7 @@ class LandingPageProjects extends Component {
                             </div>
                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div className="blog-btn text-left text-lg-right mt_sm--10 mt_md--10">
-                                    <a className="btn-transparent rn-btn-dark" href="/blog"><span className="text">View All Home Designs</span></a>
+                                    <a className="btn-transparent rn-btn-dark" href="/house-designs"><span className="text">View All Home Designs</span></a>
                                 </div>
                             </div>
                         </div>

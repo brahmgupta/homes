@@ -5,10 +5,11 @@ import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/FooterKC";
-import { FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn, FaBed, FaBath, FaCar, FaCouch,FaArrowsAltH } from "react-icons/fa";
+import { FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn, FaBed, FaBath, FaCar, FaCouch, FaArrowsAltH } from "react-icons/fa";
 
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
+import { Link } from "react-router-dom";
 
 
 const PortfolioList = [
@@ -51,7 +52,7 @@ const TabOne = [
         bigImage: '/assets/images/house-land/kc-1.jpeg',
         category: 'Web Design',
         title: 'Design is a creative part',
-        width: '12.5', 
+        width: '12.5',
         depth: '26',
         size: '28',
         config: [
@@ -144,15 +145,33 @@ class GalleryKC extends Component {
                 {/* End Header Area  */}
 
                 {/* Start Breadcrump Area */}
-                <Breadcrumb title={'Gallery'} />
+                {/* <Breadcrumb title={'Gallery'} /> */}
+                <div className="breadcrumb-area rn-bg-color ptb--150 bg_image bg-image-gallery" data-black-overlay="5">
+                    <div className="container">
+                        <div className="row align-items-center">
+                            <div className="col-lg-8">
+                                <div className='inner text-left gallery-inner-kc'>
+                                    <h1 className="title">Home Designs</h1>
+                                    <p className="description white">Your family is unique, so why not create a unique home that completely matches your needs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
                 {/* End Breadcrump Area */}
 
                 {/* Start Page Wrapper  */}
                 <main className="page-wrapper">
 
+                    <div class="section-title text-center service-style--3 mb--30 mb_sm--0 mt-5">
+                        <h3 class="title">House and Land packages - NSW, VIC & ACT</h3>
+                        <p className='description' >Our house and land packages are suited to all budgets and lifestyles. Call us today so we can get started on tailoring the package that’s right for you!</p>
+                    </div>
+
                     {/* Start Portfolio Area  */}
-                    <div className="rn-portfolio-area ptb--120 bg_color--1 line-separator">
-                        <div className="container">
+                    <div className="rn-portfolio-area bg_color--1 mb--120">
+                        {/* <div className="container"> */}
+                        <div className='plr--30' >
                             <div className="row">
                                 {TabOne.map((value, index) => (
                                     <div className="col-lg-4" key={index}>
@@ -176,7 +195,7 @@ class GalleryKC extends Component {
                                         )}
                                         <div className="item-portfolio-static home-design-card">
                                             <div onClick={() => this.setState({ isOpen: true, tab1: index })}>
-                                                <div className="portfolio-static with-shadow">
+                                                <div className="portfolio-static portfolio-static-kc with-shadow">
                                                     <div className="thumbnail-inner">
                                                         <div className="thumbnail">
                                                             <a href="#portfolio-details">
@@ -190,7 +209,7 @@ class GalleryKC extends Component {
                                                             <div className="content-header">
                                                                 <div className='row'>
                                                                     <div className='col-sm-6'>
-                                                                        <h4 className='title plan-name'>Plan Name</h4>
+                                                                        <h3 className='title plan-name'>Plan Name</h3>
                                                                     </div>
                                                                     <div className='col-sm-6 text-right'>
                                                                         <span>{value.size}sq</span>
@@ -209,16 +228,10 @@ class GalleryKC extends Component {
                                                                             </li>
                                                                         ))}
                                                                     </ul>
-
-                                                                    <ul className="social-share social-style--2 d-flex justify-content-start liststyle mt--15">
-                                                                        {SocialShare.map((val, i) => (
-                                                                            <li key={i}><a href={`${val.link}`}>{val.Social}</a></li>
-                                                                        ))}
-                                                                    </ul>
                                                                 </div>
                                                             }
-                                                            <p>{value.category}</p>
-                                                            <h4><a href="#portfolio-details">{value.title}</a></h4>
+                                                            {/* <p>{value.category}</p>
+                                                            <h4><a href="#portfolio-details">{value.title}</a></h4> */}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -232,7 +245,7 @@ class GalleryKC extends Component {
                     {/* End Portfolio Area  */}
 
                     {/* Start Portfolio Area  */}
-                    <div className="creative-portfolio-wrapper ptb--120 bg_color--1">
+                    {/* <div className="creative-portfolio-wrapper ptb--120 bg_color--1">
                         <div className="container plr--10">
                             <div className="row row--5">
                                 {PortfolioList.map((value, i) => (
@@ -255,7 +268,7 @@ class GalleryKC extends Component {
                                 ))}
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* End Portfolio Area  */}
 
                 </main>

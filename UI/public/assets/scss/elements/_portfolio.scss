@@ -1048,12 +1048,12 @@ Portfolio Style Three
 }
 
 .home-design-card {
-  border: 1px solid #e0e2e8;
-  border-radius: 5px;
+  // border: 1px solid #e0e2e8;
+  // border-radius: 5px;
   // padding: 5px;
   .thumbnail {
     img {
-      border-radius: 0;
+      // border-radius: 0;
     }
   }
 }
@@ -1074,6 +1074,7 @@ Portfolio Style Three
 
     .plan-name {
       color: #f9004d;
+      font-weight: 500;
     }
   }
 }
@@ -1086,4 +1087,55 @@ Portfolio Style Three
   width: 100%;
   display: block;
   z-index: 9;
+}
+
+.portfolio-static-kc {
+  border-radius: 5px;
+}
+
+.bg-image-gallery {
+  background-image: url(/assets/images/house-land/gallery.jpg);
+}
+
+.gallery-inner-kc {
+  .title {
+    color: #fff;
+    font-size: 60px;
+    line-height: 80px;
+    margin-bottom: 20px;
+    position: relative;
+
+    @media #{$sm-layout} {
+      font-size: 36px;
+      line-height: 56px;
+    }
+    @media #{$md-layout} {
+      font-size: 36px;
+      line-height: 56px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 184px;
+      height: 2px;
+      background: #f9004d;
+      opacity: 0.75;
+
+      @media #{$sm-layout} {
+        width: 110px;
+      }
+      @media #{$md-layout} {
+        width: 110px;
+      }
+    }
+  }
+
+  p.description {
+    color: #fff;
+    font-size: 24px;
+    line-height: 40px;
+  }
 }
