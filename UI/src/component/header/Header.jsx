@@ -126,9 +126,26 @@ class Header extends Component {
                         <div className="header-btn">
                             <div className="call-icon call-icon-kc">
                                 <FiPhoneCall />
+                            </div>
+                            <a class="btn-transparent rn-btn-dark" href="tel:1300123456">
+                                <span class="text">1800.960.101</span>
+                            </a>
+                            {/* <div className="states">
+                                <ul>
+                                    <li>
+                                        NSW
+                                    </li>
+                                    <li>.</li>
+                                    <li>
+                                        VIC
+                                    </li>
+                                    <li>.</li>
 
-                            </div><a class="btn-transparent rn-btn-dark" href="tel:1300123456"><span class="text">1800.960.101</span></a>
-
+                                    <li>
+                                        ACT
+                                    </li>
+                                </ul>
+                            </div> */}
                             {/* <a className="rn-button-style--2 btn-solid" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
                                 <span>Contact Us</span>
                             </a> */}

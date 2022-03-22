@@ -356,7 +356,16 @@
     }
 }
 
-
+.states {
+    position:absolute;
+    ul{
+        list-style: none;
+        display: flex;
+        li {
+            margin-right: 4px;
+        }
+    }
+}
 
 /*-----------------------------
     MObile Menu Style Css 

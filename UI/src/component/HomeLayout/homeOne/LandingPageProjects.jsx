@@ -91,7 +91,7 @@ class LandingPageProjects extends Component {
                                         <div className="portfolio-static">
                                             <div className="thumbnail-inner">
                                                 <div className="thumbnail">
-                                                    <a href="#portfolio-details">
+                                                    <a href="/house-designs">
                                                     <img src={`${value.imageSrc}`} alt="House & Land" />
 
                                                         {/* <img src={`/assets/images/portfolio/dp-portfolio-${value.image}.jpg`} alt="Portfolio Images" /> */}

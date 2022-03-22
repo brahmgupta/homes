@@ -1147,3 +1147,56 @@ Portfolio Style Three
 .gallery-title-kc {
   margin-top: 60px;
 }
+
+.filter {
+
+  .filter-block {
+    @media #{$sm-layout} {
+      margin-top: 18px;
+    }
+  }
+
+  .block-width {
+    p {
+      margin-bottom: 0;
+    }
+    @media #{$md-layout} {
+      margin-top: 28px;
+    }
+  }
+  
+  p {
+    margin-bottom: 8px;
+  }
+
+  ul {
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+      color: $kc-color;
+      margin-right: 8px;
+
+      .rn-btn {
+        padding: 0 12px;
+        height: 28px;
+        line-height: 26px;
+        font-size: 12px;
+        &.active {
+          border: 2px solid #f9004d;
+          color: #ffffff;
+          background: #f9004d;
+        }
+      }
+    }
+  }
+
+  select {
+    border: 0;
+    border-bottom: 1px solid $kc-color;;
+    // padding: 3px 0 7px;
+    padding-left: 0;
+  }
+}

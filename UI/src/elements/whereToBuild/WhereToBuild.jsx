@@ -16,13 +16,13 @@ const WhereToBuild = (props) => {
                         <div className="inner">
                             {/* <p>Development</p> */}
                             {/* <h4><a href="/portfolio-details">Unit or Townhouse</a></h4> */}
-                             <h4><a class="btn-no-transparent rn-btn-dark" href="/blog"><span class="text">Units or Townhouse</span></a></h4>
+                             <h4><a class="btn-no-transparent rn-btn-dark" href="/house-designs"><span class="text">Units or Townhouse</span></a></h4>
                             {/* <div className="portfolio-button">
                                 <a className="rn-btn" href="/portfolio-details">View Details</a>
                             </div> */}
                         </div>
                     </div>
-                    <Link className="link-overlay" to="/portfolio-details"></Link>
+                    <Link className="link-overlay" to="/house-designs"></Link>
                 </div>
             </div>
             <div className='col-lg-4 col-md-6 col-sm-6 col-12' key={2}>
@@ -35,13 +35,13 @@ const WhereToBuild = (props) => {
                         <div className="inner">
                             {/* <p>Development</p> */}
                             {/* <h4><a href="/portfolio-details">Unit or Townhouse</a></h4> */}
-                            <h4><a class="btn-no-transparent rn-btn-dark" href="/blog"><span class="text">Custom Home</span></a></h4>
+                            <h4><a class="btn-no-transparent rn-btn-dark" href="/house-designs"><span class="text">Custom Home</span></a></h4>
                             {/* <div className="portfolio-button">
                                 <a className="rn-btn" href="/portfolio-details">View Details</a>
                             </div> */}
                         </div>
                     </div>
-                    <Link className="link-overlay" to="/portfolio-details"></Link>
+                    <Link className="link-overlay" to="/house-designs"></Link>
                 </div>
             </div>
             <div className='col-lg-4 col-md-6 col-sm-6 col-12' key={3}>
@@ -54,13 +54,13 @@ const WhereToBuild = (props) => {
                         <div className="inner">
                             {/* <p>Development</p> */}
                             {/* <h4><a href="/portfolio-details">Unit or Townhouse</a></h4> */}
-                            <h4><a class="btn-no-transparent rn-btn-dark" href="/blog"><span class="text">House & Land</span></a></h4>
+                            <h4><a class="btn-no-transparent rn-btn-dark" href="/house-designs"><span class="text">House & Land</span></a></h4>
                             {/* <div className="portfolio-button">
                                 <a className="rn-btn" href="/portfolio-details">View Details</a>
                             </div> */}
                         </div>
                     </div>
-                    <Link className="link-overlay" to="/portfolio-details"></Link>
+                    <Link className="link-overlay" to="/house-designs"></Link>
                 </div>
             </div>
             {/* <div className='col-lg-4 col-md-6 col-sm-6 col-12' key={2}>

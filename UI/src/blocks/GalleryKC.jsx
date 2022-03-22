@@ -163,7 +163,7 @@ class GalleryKC extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
                 {/* End Breadcrump Area */}
 
@@ -175,6 +175,79 @@ class GalleryKC extends Component {
                         <p className='description'>Our house and property packages are catered for all budgets and lifestyles. Call us today so we can get started on tailoring the package that’s right for you!</p>
                         {/* <p className='description' >Our house and land packages are suited to all budgets and lifestyles. Call us today so we can get started on tailoring the package that’s right for you!</p> */}
                     </div>
+
+                    {/* Start Filter Area  */}
+                    <div className='filter plr--30'>
+                        <div className='row'>
+                            <div className='col-sm-12 col-md-4 col-lg-3 filter-block'>
+                                <p>
+                                    Storey
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a class="rn-btn active" href="/blog-details">Any</a>
+                                    </li>
+                                    <li>
+                                        <a class="rn-btn" href="/blog-details">Single</a>
+                                    </li>
+                                    <li>
+                                        <a class="rn-btn" href="/blog-details">Double</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='col-sm-12 col-md-4 col-lg-2 filter-block'>
+                                <p>
+                                    Bedrooms
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a class="rn-btn active" href="/blog-details">Any</a>
+                                    </li>                                    <li>
+                                        <a class="rn-btn" href="/blog-details">3</a>
+                                    </li>
+                                    <li>
+                                        <a class="rn-btn" href="/blog-details">4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='col-sm-12 col-md-4 col-lg-3 filter-block'>
+                                <p>
+                                    Bathrooms
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a class="rn-btn active" href="/blog-details">Any</a>
+                                    </li>
+                                    <li>
+                                        <a class="rn-btn" href="/blog-details">2</a>
+                                    </li>
+                                    <li>
+                                        <a class="rn-btn" href="/blog-details">3</a>
+                                    </li>
+                                    <li>
+                                        <a class="rn-btn" href="/blog-details">4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='col-sm-12 col-md-3 col-lg-2 filter-block block-width'>
+                                <p>
+                                    Min Block width
+                                </p>
+                                <select name="blockWidth" id="blockWidth">
+                                    <option value="">Block Width</option>
+                                    <option value="8.5">8.5</option>
+                                    <option value="10.5">10.5</option>
+                                    <option value="12.5">12.5</option>
+                                    <option value="14">14</option>
+                                    <option value="16">16</option>
+                                    <option value="18">18</option>
+                                    <option value="20">20</option>
+                                    <option value="22">22</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    {/* End Filter Area  */}
 
                     {/* Start Portfolio Area  */}
                     <div className="rn-portfolio-area bg_color--1 mb--120">
