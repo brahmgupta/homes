@@ -89,7 +89,7 @@ class Header extends Component {
                                         <li><Link to="/service-details">Service Details</Link></li>
                                     </ul>
                                 </li>
-                                <li><Link to="/about" >About</Link></li>
+                                <li><Link to="/about-us" >About</Link></li>
 
                                 <li className="has-droupdown"><Link to="#pages" >Pages</Link>
                                     <ul className="submenu">
@@ -118,9 +118,11 @@ class Header extends Component {
                                         <li><Link to="/google-map">Google Map</Link></li>
                                         <li><Link to="/columns">Columns</Link></li>
                                         <li><Link to="/pricing-table">Pricing Table</Link></li>
+                                        <li><Link to="/contact">Old Contact</Link></li>
+                                        <li><Link to="/about">Old About</Link></li>
                                     </ul>
                                 </li>
-                                <li><Link to="/contact" >Contact</Link></li>
+                                <li><Link to="/contact-us" >Contact</Link></li>
                             </ul>
                         </nav>
                         <div className="header-btn">

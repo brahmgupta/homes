@@ -110,6 +110,11 @@
     }
 }
 
+.rn-address-kc {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 input,
 textarea {
     @extend %transition;

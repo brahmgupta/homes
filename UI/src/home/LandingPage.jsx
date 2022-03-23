@@ -8,7 +8,7 @@ import AboutTwoKC from "../component/HomeLayout/homeOne/AboutTwoKC";
 import LandingPageProjects from "../component/HomeLayout/homeOne/LandingPageProjects";
 import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
-import Header from "../component/header/Header";
+import Header from "../component/header/HeaderKC";
 import FooterTwo from "../component/footer/FooterTwo";
 import ModalVideo from 'react-modal-video';
 import { videoTagString, VideoTag } from 'react-video-tag';

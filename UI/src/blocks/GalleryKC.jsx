@@ -3,7 +3,7 @@ import PageHelmet from "../component/common/Helmet";
 import Breadcrumb from "../elements/common/Breadcrumb";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
-import Header from "../component/header/Header";
+import Header from "../component/header/HeaderKC";
 import Footer from "../component/footer/FooterKC";
 import { FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn, FaBed, FaBath, FaCar, FaCouch, FaArrowsAltH } from "react-icons/fa";
 
@@ -56,11 +56,11 @@ const TabOne = [
         depth: '26',
         size: '28',
         config: [
-            { asset: <FaBed />, text: '4' },
-            { asset: <FaBath />, text: '2' },
-            { asset: <FaCar />, text: '2' },
-            { asset: <FaCouch />, text: '1' },
-            { asset: <FaArrowsAltH />, text: '12.5m' },
+            { title: 'Bedroom', asset: <FaBed />, text: '4' },
+            { title: 'Bath', asset: <FaBath />, text: '2' },
+            { title: 'Carpark', asset: <FaCar />, text: '2' },
+            { title: 'Living', asset: <FaCouch />, text: '1' },
+            { title: 'Lot width', asset: <FaArrowsAltH />, text: '12.5m' },
         ]
     },
     {
@@ -70,11 +70,11 @@ const TabOne = [
         title: 'The service provide for designer',
         subTitle: 'Fits lot: 14m x 26m',
         config: [
-            { asset: <FaBed />, text: '4' },
-            { asset: <FaBath />, text: '2' },
-            { asset: <FaCar />, text: '2' },
-            { asset: <FaCouch />, text: '2' },
-            { asset: <FaArrowsAltH />, text: '14m' },
+            { title: 'Bedroom', asset: <FaBed />, text: '4' },
+            { title: 'Bath', asset: <FaBath />, text: '2' },
+            { title: 'Carpark', asset: <FaCar />, text: '2' },
+            { title: 'Living', asset: <FaCouch />, text: '1' },
+            { title: 'Lot width', asset: <FaArrowsAltH />, text: '12.5m' },
         ]
     },
     {
@@ -84,11 +84,11 @@ const TabOne = [
         title: 'Mobile App landing Design',
         subTitle: 'Fits lot: 12.5m x 26m',
         config: [
-            { asset: <FaBed />, text: '4' },
-            { asset: <FaBath />, text: '2' },
-            { asset: <FaCar />, text: '2' },
-            { asset: <FaCouch />, text: '1' },
-            { asset: <FaArrowsAltH />, text: '12.5m' },
+            { title: 'Bedroom', asset: <FaBed />, text: '4' },
+            { title: 'Bath', asset: <FaBath />, text: '2' },
+            { title: 'Carpark', asset: <FaCar />, text: '2' },
+            { title: 'Living', asset: <FaCouch />, text: '1' },
+            { title: 'Lot width', asset: <FaArrowsAltH />, text: '12.5m' },
         ]
     },
     {
@@ -97,11 +97,11 @@ const TabOne = [
         category: 'Mobile App',
         title: 'Logo Design creativity',
         config: [
-            { asset: <FaBed />, text: '4' },
-            { asset: <FaBath />, text: '2' },
-            { asset: <FaCar />, text: '2' },
-            { asset: <FaCouch />, text: '1' },
-            { asset: <FaArrowsAltH />, text: '12.5m' },
+            { title: 'Bedroom', asset: <FaBed />, text: '4' },
+            { title: 'Bath', asset: <FaBath />, text: '2' },
+            { title: 'Carpark', asset: <FaCar />, text: '2' },
+            { title: 'Living', asset: <FaCouch />, text: '1' },
+            { title: 'Lot width', asset: <FaArrowsAltH />, text: '12.5m' },
         ]
     },
     {
@@ -152,7 +152,7 @@ class GalleryKC extends Component {
 
                 {/* Start Breadcrump Area */}
                 {/* <Breadcrumb title={'Gallery'} /> */}
-                <div className="breadcrumb-area rn-bg-color ptb--150 bg_image bg-image-gallery" data-black-overlay="5">
+                <div className="breadcrumb-area rn-bg-color ptb--180 bg_image bg-image-gallery" data-black-overlay="5">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-8">
@@ -185,13 +185,13 @@ class GalleryKC extends Component {
                                 </p>
                                 <ul>
                                     <li>
-                                        <a class="rn-btn active" href="/blog-details">Any</a>
+                                        <a class="rn-btn active">Any</a>
                                     </li>
                                     <li>
-                                        <a class="rn-btn" href="/blog-details">Single</a>
+                                        <a class="rn-btn">Single</a>
                                     </li>
                                     <li>
-                                        <a class="rn-btn" href="/blog-details">Double</a>
+                                        <a class="rn-btn">Double</a>
                                     </li>
                                 </ul>
                             </div>
@@ -201,12 +201,12 @@ class GalleryKC extends Component {
                                 </p>
                                 <ul>
                                     <li>
-                                        <a class="rn-btn active" href="/blog-details">Any</a>
+                                        <a class="rn-btn active">Any</a>
                                     </li>                                    <li>
-                                        <a class="rn-btn" href="/blog-details">3</a>
+                                        <a class="rn-btn">3</a>
                                     </li>
                                     <li>
-                                        <a class="rn-btn" href="/blog-details">4</a>
+                                        <a class="rn-btn">4</a>
                                     </li>
                                 </ul>
                             </div>
@@ -216,16 +216,16 @@ class GalleryKC extends Component {
                                 </p>
                                 <ul>
                                     <li>
-                                        <a class="rn-btn active" href="/blog-details">Any</a>
+                                        <a class="rn-btn active">Any</a>
                                     </li>
                                     <li>
-                                        <a class="rn-btn" href="/blog-details">2</a>
+                                        <a class="rn-btn">2</a>
                                     </li>
                                     <li>
-                                        <a class="rn-btn" href="/blog-details">3</a>
+                                        <a class="rn-btn">3</a>
                                     </li>
                                     <li>
-                                        <a class="rn-btn" href="/blog-details">4</a>
+                                        <a class="rn-btn">4</a>
                                     </li>
                                 </ul>
                             </div>
@@ -304,15 +304,13 @@ class GalleryKC extends Component {
                                                                     <ul className="social-share social-style--2 d-flex justify-content-around liststyle mt--15">
                                                                         {value.config.map((val, i) => (
                                                                             <li key={i} className='text-center'>
-                                                                                <span className='kc-icon'>{val.asset}</span>
+                                                                                <span className='kc-icon' title={val.title}>{val.asset}</span>
                                                                                 <span className='kc-icon-value'>{val.text}</span>
                                                                             </li>
                                                                         ))}
                                                                     </ul>
                                                                 </div>
                                                             }
-                                                            {/* <p>{value.category}</p>
-                                                            <h4><a href="#portfolio-details">{value.title}</a></h4> */}
                                                         </div>
                                                     </div>
                                                 </div>

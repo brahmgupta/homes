@@ -1101,6 +1101,14 @@ Portfolio Style Three
   background-image: url(/assets/images/house-land/gallery.jpg);
 }
 
+.bg-contact-us {
+  background-image: url(/assets/images/house-land/gallery.jpg);
+}
+
+.bg-about-us {
+  background-image: url(/assets/images/house-land/about-us.jpg);
+}
+
 .gallery-inner-kc {
   .title {
     color: #fff;
@@ -1178,6 +1186,10 @@ Portfolio Style Three
     li {
       color: $kc-color;
       margin-right: 8px;
+
+      a {
+        cursor: pointer;
+      }
 
       .rn-btn {
         padding: 0 12px;
