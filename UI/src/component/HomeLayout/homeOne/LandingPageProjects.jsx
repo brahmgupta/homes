@@ -5,45 +5,66 @@ import { portfolioSlick2 } from "../../../page-demo/script";
 const TabOne = [
     {
         image: '01',
-        imageSrc: '/assets/images/house-land/image-1.jpg',
-        bigImage: '/assets/images/house-land/image-1.jpg',
+        imageSrc: '/assets/images/house-land/cooney.jpeg',
+        bigImage: '/assets/images/house-land/cooney.jpeg',
         category: '01 Web Design',
-        title: '01 Design is a creative part'
+        title: 'Cooney'
     },
     {
         image: '02',
-        imageSrc: '/assets/images/house-land/image-2.jpg',
-        bigImage: '/assets/images/portfolio/big/dp-big--portfolio-02.jpg',
+        imageSrc: '/assets/images/house-land/medlar.jpeg',
+        bigImage: '/assets/images/house-land/medlar.jpeg',
         category: 'Mobile App',
         title: 'The service provide for designer'
     },
     {
         image: '03',
-        imageSrc: '/assets/images/house-land/image-3.jpg',
-        bigImage: '/assets/images/portfolio/big/dp-big--portfolio-03.jpg',
+        imageSrc: '/assets/images/house-land/basil.jpeg',
+        bigImage: '/assets/images/house-land/basil.jpeg',
         category: 'Web Design',
         title: 'Mobile App landing Design'
     },
     {
         image: '04',
-        imageSrc: '/assets/images/house-land/image-4.jpg',
-        bigImage: '/assets/images/portfolio/big/dp-big--portfolio-04.jpg',
+        imageSrc: '/assets/images/house-land/vista.jpeg',
+        bigImage: '/assets/images/house-land/vista.jpeg',
         category: 'Mobile App',
         title: 'Logo Design creativity'
     },
     {
         image: '05',
-        imageSrc: '/assets/images/house-land/image-5.jpg',
-        bigImage: '/assets/images/portfolio/big/dp-big--portfolio-05.jpg',
+        imageSrc: '/assets/images/house-land/colsium.jpeg',
+        bigImage: '/assets/images/house-land/colsium.jpeg',
         category: 'Web Design',
         title: 'T-shirt design is the part of design'
     },
     {
         image: '06',
-        imageSrc: '/assets/images/house-land/image-6.jpg',
-        bigImage: '/assets/images/portfolio/big/dp-big--portfolio-06.jpg',
+        imageSrc: '/assets/images/house-land/vanburn.jpeg',
+        bigImage: '/assets/images/house-land/vanburn.jpeg',
         category: 'Logo Design',
         title: 'Getting tickets to the big show'
+    },
+    {
+        image: '06',
+        imageSrc: '/assets/images/house-land/willowleaf.jpeg',
+        bigImage: '/assets/images/house-land/willowleaf.jpeg',
+        category: 'willowleaf',
+        title: 'willowleaf'
+    },
+    {
+        image: '06',
+        imageSrc: '/assets/images/house-land/wolin.jpeg',
+        bigImage: '/assets/images/house-land/wolin.jpeg',
+        category: 'wolin',
+        title: 'wolin'
+    },
+    {
+        image: '06',
+        imageSrc: '/assets/images/house-land/monomeath.jpeg',
+        bigImage: '/assets/images/house-land/monomeath.jpeg',
+        category: 'Monomeath',
+        title: 'Monomeath'
     },
 ]
 

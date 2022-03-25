@@ -1,57 +1,46 @@
 import React, { Component } from 'react'
 import PageHelmet from "../component/common/Helmet";
-import Breadcrumb from "../elements/common/Breadcrumb";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/HeaderKC";
 import Footer from "../component/footer/FooterKC";
-import { FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn, FaBed, FaBath, FaCar, FaCouch, FaArrowsAltH } from "react-icons/fa";
-
+import { FaBed, FaBath, FaCar, FaCouch, FaArrowsAltH } from "react-icons/fa";
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
-import { Link } from "react-router-dom";
-
-
-const PortfolioList = [
-    {
-        images: '7',
-        category: 'Freelancer',
-        title: 'The Language of Developer'
-    },
-    {
-        images: '1',
-        category: 'Freelancer',
-        title: 'The new Thinking for Design'
-    },
-    {
-        images: '2',
-        category: 'Freelancer',
-        title: 'The new Thinking for Design'
-    },
-    {
-        images: '3',
-        category: 'Freelancer',
-        title: 'Getting tickets to the big show'
-    },
-    {
-        images: '8',
-        category: 'Freelancer',
-        title: 'You can see your Portfolio'
-    },
-    {
-        images: '9',
-        category: 'Freelancer',
-        title: 'Getting tickets to the big show'
-    },
-]
-
 
 const TabOne = [
     {
-        image: '01',
-        bigImage: '/assets/images/house-land/kc-1.jpeg',
-        category: 'Web Design',
-        title: 'Design is a creative part',
+        title: 'Cooney',
+        bigImage: '/assets/images/house-land/cooney.jpeg',
+        width: '14',
+        depth: '28',
+        size: '30',
+        config: [
+            { title: 'Bedroom', asset: <FaBed />, text: '4' },
+            { title: 'Bath', asset: <FaBath />, text: '2' },
+            { title: 'Carpark', asset: <FaCar />, text: '2' },
+            { title: 'Living', asset: <FaCouch />, text: '2' },
+            { title: 'Lot width', asset: <FaArrowsAltH />, text: '14m' },
+        ]
+       
+    },
+    {
+        title: 'Medlar',        
+        bigImage: '/assets/images/house-land/medlar.jpeg',
+        width: '12.5',
+        depth: '26',
+        size: '36',
+        config: [
+            { title: 'Bedroom', asset: <FaBed />, text: '4' },
+            { title: 'Bath', asset: <FaBath />, text: '3' },
+            { title: 'Carpark', asset: <FaCar />, text: '2' },
+            { title: 'Living', asset: <FaCouch />, text: '2' },
+            { title: 'Lot width', asset: <FaArrowsAltH />, text: '12.5m' },
+        ]
+    },
+    {
+        title: 'Basil',
+        bigImage: '/assets/images/house-land/basil.jpeg',
         width: '12.5',
         depth: '26',
         size: '28',
@@ -64,11 +53,11 @@ const TabOne = [
         ]
     },
     {
-        image: '02',
-        bigImage: '/assets/images/house-land/kc-2.jpeg',
-        category: 'Mobile App',
-        title: 'The service provide for designer',
-        subTitle: 'Fits lot: 14m x 26m',
+        title: 'Vista',        
+        bigImage: '/assets/images/house-land/vista.jpeg',
+        width: '12.5',
+        depth: '26',
+        size: '28',
         config: [
             { title: 'Bedroom', asset: <FaBed />, text: '4' },
             { title: 'Bath', asset: <FaBath />, text: '2' },
@@ -78,11 +67,11 @@ const TabOne = [
         ]
     },
     {
-        image: '03',
-        bigImage: '/assets/images/house-land/kc-3.jpeg',
-        category: 'Web Design',
-        title: 'Mobile App landing Design',
-        subTitle: 'Fits lot: 12.5m x 26m',
+        title: 'Colsium',        
+        bigImage: '/assets/images/house-land/colsium.jpeg',
+        width: '12.5',
+        depth: '26',
+        size: '28',
         config: [
             { title: 'Bedroom', asset: <FaBed />, text: '4' },
             { title: 'Bath', asset: <FaBath />, text: '2' },
@@ -92,10 +81,11 @@ const TabOne = [
         ]
     },
     {
-        image: '04',
-        bigImage: '/assets/images/portfolio/big/dp-big--portfolio-04.jpg',
-        category: 'Mobile App',
-        title: 'Logo Design creativity',
+        title: 'Vanburn',        
+        bigImage: '/assets/images/house-land/vanburn.jpeg',
+        width: '12.5',
+        depth: '26',
+        size: '28',
         config: [
             { title: 'Bedroom', asset: <FaBed />, text: '4' },
             { title: 'Bath', asset: <FaBath />, text: '2' },
@@ -105,30 +95,48 @@ const TabOne = [
         ]
     },
     {
-        image: '05',
-        bigImage: '/assets/images/portfolio/big/dp-big--portfolio-05.jpg',
-        category: 'Web Design',
-        title: 'T-shirt design is the part of design'
+        title: 'Willowleaf',        
+        bigImage: '/assets/images/house-land/willowleaf.jpeg',
+        width: '12.5',
+        depth: '26',
+        size: '28',
+        config: [
+            { title: 'Bedroom', asset: <FaBed />, text: '4' },
+            { title: 'Bath', asset: <FaBath />, text: '2' },
+            { title: 'Carpark', asset: <FaCar />, text: '2' },
+            { title: 'Living', asset: <FaCouch />, text: '1' },
+            { title: 'Lot width', asset: <FaArrowsAltH />, text: '12.5m' },
+        ]
     },
     {
-        image: '06',
-        bigImage: '/assets/images/portfolio/big/dp-big--portfolio-06.jpg',
-        category: 'Logo Design',
-        title: 'Getting tickets to the big show'
+        title: 'Wolin',        
+        bigImage: '/assets/images/house-land/wolin.jpeg',
+        width: '12.5',
+        depth: '26',
+        size: '28',
+        config: [
+            { title: 'Bedroom', asset: <FaBed />, text: '4' },
+            { title: 'Bath', asset: <FaBath />, text: '2' },
+            { title: 'Carpark', asset: <FaCar />, text: '2' },
+            { title: 'Living', asset: <FaCouch />, text: '1' },
+            { title: 'Lot width', asset: <FaArrowsAltH />, text: '12.5m' },
+        ]
     },
-]
-
-const config = [
-    { asset: <FaBed />, text: '4' },
-    { asset: <FaBath />, text: '2' },
-];
-
-const SocialShare = [
-    { Social: <FaFacebookF />, link: 'https://www.facebook.com/' },
-    { Social: <FaLinkedinIn />, link: 'https://www.linkedin.com/' },
-    { Social: <FaInstagram />, link: 'https://www.instagram.com/' },
-    { Social: <FaTwitter />, link: 'https://twitter.com/' },
-    { Social: <FaBed />, link: 'https://twitter.com/' },
+    {
+        title: 'Monomeath',        
+        bigImage: '/assets/images/house-land/monomeath.jpeg',
+        width: '12.5',
+        depth: '26',
+        size: '28',
+        config: [
+            { title: 'Bedroom', asset: <FaBed />, text: '4' },
+            { title: 'Bath', asset: <FaBath />, text: '2' },
+            { title: 'Carpark', asset: <FaCar />, text: '2' },
+            { title: 'Living', asset: <FaCouch />, text: '1' },
+            { title: 'Lot width', asset: <FaArrowsAltH />, text: '12.5m' },
+        ]
+    }
+    
 ]
 
 class GalleryKC extends Component {
@@ -290,7 +298,7 @@ class GalleryKC extends Component {
                                                             <div className="content-header">
                                                                 <div className='row'>
                                                                     <div className='col-sm-6'>
-                                                                        <h3 className='title plan-name'>Plan Name</h3>
+                                                                        <h3 className='title plan-name'>{value.title || 'K Home'}</h3>
                                                                     </div>
                                                                     <div className='col-sm-6 text-right'>
                                                                         <span>{value.size}sq</span>
@@ -323,32 +331,7 @@ class GalleryKC extends Component {
                     </div>
                     {/* End Portfolio Area  */}
 
-                    {/* Start Portfolio Area  */}
-                    {/* <div className="creative-portfolio-wrapper ptb--120 bg_color--1">
-                        <div className="container plr--10">
-                            <div className="row row--5">
-                                {PortfolioList.map((value, i) => (
-                                    <div className="col-lg-4 col-md-6 col-12" key={i}>
-                                        <div className="portfolio-style--3">
-                                            <div className="thumbnail">
-                                                <a href="/portfolio-details">
-                                                    <img className="w-100" src={`/assets/images/portfolio/portfolio-${value.images}.jpg`} alt="Portfolio Images" />
-                                                </a>
-                                            </div>
-                                            <div className="content">
-                                                <p className="portfoliotype">{value.category}</p>
-                                                <h4 className="title"><a href="/portfolio-details">{value.title}</a></h4>
-                                                <div className="portfolio-btn">
-                                                    <a className="rn-btn text-white" href="/portfolio-details">Read More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div> */}
-                    {/* End Portfolio Area  */}
+                   
 
                 </main>
                 {/* End Page Wrapper  */}

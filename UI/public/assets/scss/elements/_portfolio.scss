@@ -1097,6 +1097,21 @@ Portfolio Style Three
   border-radius: 5px;
 }
 
+.thumbnail-kc{
+  height: 284px;
+
+  @media #{$sm-layout} {
+    height: auto;
+  }
+  @media #{$small-mobile} {
+    height: auto;
+  }
+
+  @media #{$small-mobile} {
+    height: auto;
+  }
+}
+
 .bg-image-gallery {
   background-image: url(/assets/images/house-land/gallery.jpg);
 }
