@@ -1,15 +1,11 @@
 import React, { Component, Fragment } from "react";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
-import ServiceTwo from "../elements/service/ServiceTwo";
-import CounterOne from "../elements/counters/CounterOne";
-import Testimonial from "../elements/Testimonial";
 import AboutTwoKC from "../component/HomeLayout/homeOne/AboutTwoKC";
 import LandingPageProjects from "../component/HomeLayout/homeOne/LandingPageProjects";
 import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
 import Header from "../component/header/HeaderKC";
-import FooterTwo from "../component/footer/FooterTwo";
 import ModalVideo from 'react-modal-video';
 import { videoTagString, VideoTag } from 'react-video-tag';
 import Helmet from "../component/common/Helmet";
@@ -75,7 +71,7 @@ class LandingPage extends Component {
                                 </div>
                             </div>
                             <div className="video-background">
-                                <VideoTag autoPlay={`${true}`} muted={`${true}`} playsInline={`${true}`} loop={`${true}`} src={`${"/assets/images/service/A_Royal_Treat.mp4"}`} poster={`${"/assets/images/bg/bg-image-24.jpg"}`} />
+                                <VideoTag autoPlay={`${true}`} muted={`${true}`} playsInline={`${true}`} loop={`${true}`} src={`${"/assets/images/service/Trimmed.mp4"}`} poster={`${"/assets/images/bg/bg-image-24.jpg"}`} />
                             </div>
                         </div>
                     ))}
