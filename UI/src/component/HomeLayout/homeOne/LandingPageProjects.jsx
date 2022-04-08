@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 import { portfolioSlick2 } from "../../../page-demo/script";
 
 const TabOne = [
@@ -98,7 +99,8 @@ class LandingPageProjects extends Component {
                             </div>
                             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div className="blog-btn text-left text-lg-right mt_sm--10 mt_md--10">
-                                    <a className="btn-transparent rn-btn-dark" href="/house-designs"><span className="text">View All Home Designs</span></a>
+                                    <Link className="btn-transparent rn-btn-dark" to="/house-designs"><span className="text">View All Home Designs</span></Link>
+                                    {/* <a className="btn-transparent rn-btn-dark" href="/house-designs"><span className="text">View All Home Designs</span></a> */}
                                 </div>
                             </div>
                         </div>
@@ -112,11 +114,10 @@ class LandingPageProjects extends Component {
                                         <div className="portfolio-static">
                                             <div className="thumbnail-inner">
                                                 <div className="thumbnail">
-                                                    <a href="/house-designs">
-                                                    <img src={`${value.imageSrc}`} alt="House & Land" />
-
+                                                    <Link to="/house-designs" >
+                                                        <img src={`${value.imageSrc}`} alt="House & Land" />
                                                         {/* <img src={`/assets/images/portfolio/dp-portfolio-${value.image}.jpg`} alt="Portfolio Images" /> */}
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                             {/* <div className="content">

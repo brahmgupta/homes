@@ -62,12 +62,18 @@ class HeaderKC extends Component {
                     <div className="header-right header-right-kc">
                         <nav className="mainmenunav d-lg-block">
                             <ul className="mainmenu">
-                                <li><Link to="/">Home</Link>
+                                <li>
+                                    <Link to="/">Home</Link>
                                 </li>
-                                <li><Link to="/house-designs" >House Designs</Link>
+                                <li>
+                                    <Link to="/house-designs" >House Designs</Link>
                                 </li>
-                                <li><Link to="/about-us" >About Us</Link></li>
-                                <li><Link to="/contact-us" >Contact Us</Link></li>
+                                <li>
+                                    <Link to="/about-us" >About Us</Link>
+                                </li>
+                                <li>
+                                    <Link to="/contact-us" >Contact Us</Link>
+                                </li>
                             </ul>
                         </nav>
                         <div className="header-btn">
